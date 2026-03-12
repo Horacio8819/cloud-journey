@@ -52,3 +52,7 @@ developers can upload product images,  but NOT delete or change permissions
         }
     ]
 }
+
+
+✅ Create IAM User
+✅ Attach the policy you just made
