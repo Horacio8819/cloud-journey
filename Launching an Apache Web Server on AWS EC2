@@ -1,0 +1,64 @@
+🚀 Launching an Apache Web Server on AWS EC2 (Hands-On Cloud Project)
+
+Today I deployed a simple Apache Web Server on Amazon EC2 and served a custom HTML page. This was a great exercise to practice working with Linux, SSH, and security groups in the cloud.
+
+🔧 Steps I Followed
+
+1️⃣ Launch an EC2 Instance
+
+- AMI: Amazon Linux
+- Instance Type: t2.micro (Free Tier)
+- Create or select a **Key Pair**
+
+Created and downloaded a key pair for SSH access
+
+2️⃣ Configure Security Group
+To allow users to access the website, I added an Inbound Rule:
+Add an inbound rule:
+
+| Type | Protocol | Port | Source |
+|-----|-----|-----|-----|
+| HTTP | TCP | 80 | 0.0.0.0/0 |
+
+This allows traffic from the internet to reach the web server.
+
+3️⃣ Connect to the Instance (AWS Linux CLI)
+
+📝 Editing Files with VIM
+To manually edit the web page on the server:
+
+sudo vim /var/www/html/index.html
+Basic VIM workflow:
+Press i → enter insert mode
+Edit the file
+Press ESC
+Type → save and exit
+
+
+💡 What I Practiced
+
+AWS EC2 instance deployment
+Security groups and HTTP access
+Apache web server setup
+Editing files using VIM
+SSH access to cloud servers
+
+       User Browser
+            │
+            │ HTTP Request
+            ▼
+    AWS Security Group
+       (Port 80 open)
+            │
+            ▼
+    EC2 Instance
+     Amazon Linux
+            │
+            ▼
+    Apache Web Server
+            │
+            ▼
+    Custom HTML Page
+
+
+What happen if we allow traffic from the internet to reach the web server using https? 
