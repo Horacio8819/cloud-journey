@@ -11,6 +11,9 @@ options for my family.
 - Set up GitHub + LinkedIn for cloud visibility
 - Wrote this public proof log
 - Next up: S3 + IAM “Public Access Problem” lab
+
+**Week 2**
+https://github.com/Horacio8819/AWS-Serverless-Automation-Missed-Report-Problem
   
 **Projects (live/soon)**
 (whatever projects or workshops you will do)
